@@ -1,0 +1,354 @@
+ <script type="text/javascript">
+		$(document).ready(function(){
+		/*슬라이더 처리 이렇게 밖에 할 수 없었습니다.*/
+				if($('.schedule_banner_slide').length > 0){
+			schedule_banner_slide = $('.schedule_banner_slide').bxSlider({
+				auto:false,
+				autoHover: true,
+				autoDelay: 3000,
+				pause: 3000,
+				page:false,
+				infiniteLoop:false,
+				controls:true,
+				prevSelector : '.btn_schedule_prev',
+				nextSelector : '.btn_schedule_next',
+				touchEnabled:false,
+				hideControlOnEnd:true,
+				slideMargin:20,
+				slideWidth:260,
+				minSlides: 4,
+				maxSlides : 4,
+				moveSlides:1
+			});
+		}
+		$('.speaking').hide();
+		$('.writing').hide();
+		$('.speakingwriting').hide();
+			});
+
+	//Speaking 탭 누를시 Speaking만 노출
+	function displaySpeaking(){
+		$(".speaking").show();
+		$('.writing').hide();
+		$('.speakingwriting').hide();
+	}
+	//Writing 탭 누를시 Writing만 노출
+	function displayWriting(){
+		$(".speaking").hide();
+		$('.writing').show();
+		$('.speakingwriting').hide();
+	}
+	//SpeakingWriting 탭 누를시 SpeakingWriting만 노출
+	function displaySpeakingWriting(){
+		$(".speaking").hide();
+		$('.writing').hide();
+		$('.speakingwriting').show();
+	}
+	</script>
+<!-- 시험일정 안내 -->
+<section class="main_exam_schedule">
+<div class="main_schedule_list">
+<div class="inner">
+<h3 class="main_title">시험일정안내</h3>
+<div class="main_hover_list">
+<ul class="schedule_banner_slide">
+<li>
+<a class="cell" href="javascript:receiptLink('TOE','TOE_417','toeEXS_1','10922','toe','2020-10-10 00:00:00');">
+<span class="flag">
+<span class="f_500 point_color point_border_color type_01">특별추가접수</span> <span class="point_background_color type_02">접수하기</span>
+</span>
+<span class="date">
+<em class="roboto">2020.10.10</em>
+<span class="time">
+<em class="color_02">(토)</em> </span></span></a></li></ul></div></div></div></section>
+<em class="roboto"></em>
+
+
+<span class="info">
+															접수마감 : 2020.10.07									(수)
+									12:00<br/>
+															성적발표 : 2020.10.22									(목)
+									06:00</span>
+
+
+<li>
+<a class="cell" href="javascript:receiptLink('TOE','TOE_418','toeEXR_1','10902','toe','2020-10-25 00:00:00');">
+<span class="flag">
+<span class="type_01 f_500">정기접수</span> <span class="point_background_color type_02">접수하기</span>
+</span>
+<span class="date">
+<em class="roboto">2020.10.25</em>
+<span class="time">
+<em class="color_01">(일)</em> </span></span></a></li>
+<em class="roboto"></em>
+
+
+<span class="info">
+														접수마감 : 2020.10.12										(월)
+										08:00<br/>
+															성적발표 : 2020.11.09									(월)
+									06:00</span>
+
+
+<li>
+<a class="cell" href="javascript:receiptLink('TOE','TOE_419','toeEXR_1','11163','toe','2020-11-08 00:00:00');">
+<span class="flag">
+<span class="type_01 f_500">정기접수</span> <span class="point_background_color type_02">접수하기</span>
+</span>
+<span class="date">
+<em class="roboto">2020.11.08</em>
+<span class="time">
+<em class="color_01">(일)</em> </span></span></a></li>
+<em class="roboto"></em>
+
+
+<span class="info">
+														접수마감 : 2020.10.26										(월)
+										08:00<br/>
+															성적발표 : 2020.11.19									(목)
+									06:00</span>
+
+
+<li>
+<a class="cell" href="javascript:receiptLink('TOE','TOE_420','toeEXR_1','11164','toe','2020-11-22 00:00:00');">
+<span class="flag">
+<span class="type_01 f_500">정기접수</span> <span class="point_background_color type_02">접수하기</span>
+</span>
+<span class="date">
+<em class="roboto">2020.11.22</em>
+<span class="time">
+<em class="color_01">(일)</em> </span></span></a></li>
+<em class="roboto"></em>
+
+
+<span class="info">
+														접수마감 : 2020.11.09										(월)
+										08:00<br/>
+															성적발표 : 2020.12.04									(금)
+									06:00</span>
+
+
+<li>
+<a class="cell" href="javascript:receiptLink('TOE','TOE_421','toeEXR_1','11305','toe','2020-11-29 00:00:00');">
+<span class="flag">
+<span class="type_01 f_500">정기접수</span> <span class="point_background_color type_02">접수하기</span>
+</span>
+<span class="date">
+<em class="roboto">2020.11.29</em>
+<span class="time">
+<em class="color_01">(일)</em> </span></span></a></li>
+<em class="roboto"></em>
+
+
+<span class="info">
+														접수마감 : 2020.11.16										(월)
+										08:00<br/>
+															성적발표 : 2020.12.11									(금)
+									06:00</span>
+
+
+<li class="no_schedule">
+<a class="cell" href="javascript:void(0);">
+<span class="flag">
+<span class="type_01 f_500">정기접수</span>
+<span class="type_03">접수예정</span>
+</span>
+<span class="date">
+<em class="roboto">2020.12.05</em>
+<span class="time">
+<em class="color_02">(토)</em> </span></span></a></li>
+<em class="roboto"></em>
+
+
+<span class="info">
+																성적발표 : 2020.12.17									(목)
+									06:00</span>
+
+
+<li class="no_schedule">
+<a class="cell" href="javascript:void(0);">
+<span class="flag">
+<span class="type_01 f_500">정기접수</span>
+<span class="type_03">접수예정</span>
+</span>
+<span class="date">
+<em class="roboto">2020.12.13</em>
+<span class="time">
+<em class="color_01">(일)</em> </span></span></a></li>
+<em class="roboto"></em>
+
+
+<span class="info">
+																성적발표 : 2020.12.24									(목)
+									06:00</span>
+
+
+<li class="no_schedule">
+<a class="cell" href="javascript:void(0);">
+<span class="flag">
+<span class="type_01 f_500">정기접수</span>
+<span class="type_03">접수예정</span>
+</span>
+<span class="date">
+<em class="roboto">2020.12.20</em>
+<span class="time">
+<em class="color_01">(일)</em> </span></span></a></li>
+<em class="roboto"></em>
+
+
+<span class="info">
+																성적발표 : 2021.01.04									(월)
+									06:00</span>
+
+
+
+
+<p class="btn_control btn_schedule_prev"></p>
+<p class="btn_control btn_schedule_next"></p>
+<a class="btn_data_more" href="/receipt/examSchList.php">전체일정보기 +</a>
+
+
+
+<!-- //시험일정 안내 -->
+<!-- 저작권 및 다운로드 -->
+<section class="main_middle">
+<div class="inner">
+<div class="data">
+<ul>
+<li class="left">
+<div class="cell">
+<p class="info" id="left_info">TOEIC<sup>®</sup> 시험문제는 ETS 창작물로서</p>
+<p class="title" id="left_title">"저작권법에 의해 보호받는 저작물입니다."</p>
+<p class="btn_view" id="left_btn_view"><a href="/news/noticeView.php?noticeCode=121" id="left_btn_view">자세히 보기</a></p>
+</div>
+</li>
+<li class="right">
+<div class="cell">
+<p class="title" id="right_title">토익스토리</p>
+<p class="info" id="right_info">어학시험에 대한 다양하고 재밌는 이야기들이 있습니다.</p>
+<p class="btn_view" id="right_btn_view"><a href="https://www.toeicstory.co.kr" id="right_btn_view" target="_blank" title="새창으로 열림">자세히 보기</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- //저작권 및 다운로드 -->
+<!-- 현황판 -->
+<section class="main_condition">
+<div class="inner" id="inner">
+<ul>
+<li> <a href="https://exam.toeic.co.kr/common/template/viewContents.php?contentsCode=21"> <img alt="TOEIC 활용현황" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/content/toeic/main_condition_icon_01.png"/><div class="txt"><span class="title">TOEIC<sup>®</sup> 활용현황</span> <span class="info">대기업 및 학교, 공공기관에서 TOEIC을 도입 활용하고 있습니다. </span></div> </a> </li>
+<li> <a href="/result/statisToeic.php"> <img alt="TOEIC 데이터분석" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/content/toeic/main_condition_icon_02.png"/> <div class="txt"><span class="title">데이터분석</span> <span class="info">매 회차 TOEIC 성적 데이터 및 각종 자료들을 제공합니다.</span> </div></a> </li>
+<li> <a href="https://exam.ybmnet.co.kr/newsletter" target="_blank" title="새창으로 열림"> <img alt="뉴스레터" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/content/toeic/main_condition_icon_03.png"/> <div class="txt"><span class="title">뉴스레터<em class="icon_new">N</em></span> <span class="info">격월 발행되는 한국TOEIC위원회 소식지 뉴스레터를 만나보세요.</span></div> </a> </li>
+</ul> </div>
+</section>
+<!-- //현황판 --><!-- TOEIC / TOEIC SW-->
+<form id="viewForm" method="post" name="viewForm">
+<input id="noticeCode" name="noticeCode" type="hidden"/>
+<input id="newsCode" name="newsCode" type="hidden"/>
+<input id="jobsCode" name="jobsCode" type="hidden"/>
+<!-- 공지사항 -->
+<section class="main_notice">
+<div class="inner">
+<div class="grid">
+<!-- 공지사항 및 보도자료 -->
+<div class="cell">
+<ul class="line_tab">
+<li class="actived"><a class="btn_notice_more" href="javascript:void(0);" onclick="common.tabSort(this);">공지사항</a></li>
+<li class=""><a class="btn_media_more" href="javascript:void(0);" onclick="common.tabSort(this);">보도자료 </a></li>
+</ul>
+<div class="line_tab_content">
+<!-- 공지사항 -->
+<div style="display:block">
+<ul class="notice_list">
+<li>
+<a class="link_notice" href="javascript:void(0);" name="9052">
+																				코로나19 대응 TOEIC 안전 수칙																				</a>
+<span class="date">2020.09.02</span>
+</li>
+<li>
+<a class="link_notice" href="javascript:void(0);" name="9102">
+																				코로나19로 인한 [사용불가] 고사장 발생 시 조치 안내																				</a>
+<span class="date">2020.09.02</span>
+</li>
+<li>
+<a class="link_notice" href="javascript:void(0);" name="9276">
+																				11월 29일(일), 12월 13일(일) TOEIC 정기시험 추가 시행 안내																				<em class="icon_new">N</em>
+</a>
+<span class="date">2020.09.25</span>
+</li>
+<li>
+<a class="link_notice" href="javascript:void(0);" name="9234">
+																				TOEIC 규정 개정 공지																				</a>
+<span class="date">2020.09.02</span>
+</li>
+</ul>
+</div>
+<!-- //공지사항 -->
+<!-- 보도자료 -->
+<div>
+<ul class="notice_list">
+<li>
+<a class="link_news" href="javascript:void(0);" name="801">‘라이프 스킬’ 필요 시대… 내 삶에 가장 더하고 싶은 능력은 ‘외국어’와 ‘재테크’ 																				<em class="icon_new">N</em>
+</a>
+<span class="date">2020.09.25</span>
+</li>
+<li>
+<a class="link_news" href="javascript:void(0);" name="800">취업준비생 절반 이상 ‘공인 영어 성적’과 ‘자격증 취득’ 노력 중 																				</a>
+<span class="date">2020.09.21</span>
+</li>
+<li>
+<a class="link_news" href="javascript:void(0);" name="799">코로나19 극복 위한 ‘무료’ 비대면 토익, 토익스피킹 공부법 																				</a>
+<span class="date">2020.09.21</span>
+</li>
+<li>
+<a class="link_news" href="javascript:void(0);" name="798">TOEIC Speaking 평일 추가 시험 시행																				</a>
+<span class="date">2020.09.07</span>
+</li>
+</ul>
+</div>
+<!-- //보도자료 -->
+</div>
+<a class="btn_data_more notice_more" href="/news/notice.php">더보기 +</a>
+<a class="btn_data_more media_more" href="/news/media.php" style="display:none;">더보기 +</a>
+</div>
+<!--채용정보 -->
+<div class="cell">
+<h3 class="main_title">채용정보<span>(접수 마감일 기준)</span></h3>
+<ul class="notice_list recruit_list">
+<li>
+<a class="recruit" href="javascript:void(0);" name="7639">[DB하이텍] 2020년 하반기 신입사원 모집																		</a>
+<span class="date">
+										2020.10.06									<!--	(화)-->
+</span>
+</li>
+<li>
+<a class="recruit" href="javascript:void(0);" name="7541">[현대엘리베이터] 부문별 신입 및 경력 상시 모집																		</a>
+<span class="date">
+										2020.12.31									<!--	(목)-->
+</span>
+</li>
+<li>
+<a class="recruit" href="javascript:void(0);" name="7630">[BGF/BGF리테일] 2020 부서별 인턴십 상시채용																		<em class="icon_new">N</em>
+</a>
+<span class="date">
+										2020.12.31									<!--	(목)-->
+</span>
+</li>
+<li>
+<a class="recruit" href="javascript:void(0);" name="7642">[세종사이버대학교] 정규직원 채용 공고																		</a>
+<span class="date">
+										2020.09.28									<!--	(월)-->
+</span>
+</li>
+</ul>
+<a class="btn_data_more" href="/recruit/recruit.php">더보기 +</a>
+</div>
+<!-- //채용정보 -->
+</div>
+</div>
+</section>
+</form>
+<!-- //공지사항 -->
+

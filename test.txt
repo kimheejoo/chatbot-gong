@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+
+<!-- ******************************************************
+	@ HTML Class Type Design
+
+	- html 태그에 아래의 클래스 추가에 따른 포인트칼라 변경 및 디자인 변경
+
+	|------ TOEIC							:	TOEIC
+	|------ TOEIC_SPEAKING			:	TOEIC SPEAKING
+	|------ TOEFL_ITP					:	TOEFL ITP
+	|------ JPT								:	JPT
+	|------ SJPT							:	SJPT
+	|------ TSC							:	JSC
+	|------ JET								:	JET
+	|------ JET_SPEAKING				:	JET SPEAKING
+	|------ JET_KIDS						:	JET KIDS
+	|------ TOEIC_BRIDGE				:	TOEIC BRIDGE
+	|------ SANGMUKO					:	상무한검
+	|------ JPL								:	일본어검정
+	|------ KPE								:	KPE
+
+******************************************************* -->
+<html class="TOEIC" data-examcate="TOE" lang="ko">
+<head>
+<title>[TOEIC® 공식 사이트] 시험접수 온라인접수</title>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="설명" name="Description"/>
+<meta content="TOEIC, 토익, TOEIC Speaking, 토익스피킹, JPT 일본어능력시험, JPT" name="Keywords"/>
+<meta content="telephone=no" name="format-detection"/>
+<!--캐시 설정-->
+<meta content="no-cache" http-equiv="Cache-Control">
+<meta content="0" http-equiv="Expires">
+<meta content="no-cache" http-equiv="Pragma">
+<meta content="TOEIC" property="og:title"/>
+<meta content="exam.toeic.co.kr" property="og:url"/>
+<meta content="https://imagesisa.ybmsisa.com/platform/common/mobile/m_logo_toeic.png" property="og:image"/>
+<meta content="국제 실용영어능력시험" property="og:description"/>
+<link href="https://www.toeic.co.kr" rel="canonical"/>
+<link href="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/favicon.png" rel="icon"/>
+<link href="/_resources/css/base.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/_resources/css/guide.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/_resources/css/dev.css" media="all" rel="stylesheet" type="text/css"/>
+<!--
+<script src="/_resources/components/jquery/jquery-1.12.4.min.js"></script>
+<script src="/_resources/components/jquery-ui/jquery-ui.min.js"></script>
+<script src="/_resources/components/moment/moment.js"></script>
+-->
+<script src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/texam/_resources/components/jquery/jquery-1.12.4.min.js"></script>
+<script src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/texam/_resources/components/jquery-ui/jquery-ui.min.js"></script>
+<script src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/texam/_resources/components/moment/moment.js"></script>
+<!--[if lte IE 9]>
+	<script src="/_resources/components/placeholders/placeholders.min.js"></script>
+	<script src="/_resources/components/html5/html5.js"></script>
+<![endif]-->
+<!--
+<script type="text/javascript" src="/_resources/components/bluebird/bluebird.min.js"></script>
+<script type="text/javascript" src="/_resources/js/dev.js"></script>
+<script type="text/javascript" src="/_resources/components/jquery-validation/jquery.validate.min.js"></script>
+-->
+<script src="/_resources/components/fileSaver/FileSaver.js" type="text/javascript"></script>
+<script src="/_resources/components/jspdf/jspdf.js" type="text/javascript"></script>
+<script src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/texam/_resources/components/bluebird/bluebird.min.js" type="text/javascript"></script>
+<script src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/texam/_resources/js/dev.js" type="text/javascript"></script>
+<script src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/texam/_resources/components/jquery-validation/jquery.validate.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).on("click", ".active_title", function(){
+	$(this).next(".menu_list").slideToggle(150);
+});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics : UA-55278078 플랫폼 기획팀용  -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-55278078-28"></script>
+<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag("js", new Date());
+		gtag("config", "UA-55278078-28");
+	</script>
+<!-- Global site tag (gtag.js) - Google Ads: 857892321 본사용 -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-857892321"></script>
+<script> 
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);} 
+		gtag('js', new Date()); 
+		gtag('config', 'AW-857892321'); 
+			</script>
+</meta></meta></meta></meta></head>
+<!-- 윈도우 팝업일때 body 태그에 window_pop 클래스 추가 -->
+<body>
+<!-- float -->
+<input id="floatTotalCount" type="hidden" value="1"/>
+<input id="floatCloseCount" type="hidden" value="0"/>
+<div class="float_dimd" style="display:none;"></div>
+<div class="float_ly" style="display:none;">
+<!-- banner 1-->
+<div class="float_ly_wrap modalfadeInUp animate floatBanner0 floatBanner360" style="display:none;">
+<div class="float_ly_cont">
+<a href="javascript:void(0);" style="cursor:default">
+<img src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/mainbanner/202009101822521687239123.png"/>
+</a>
+</div>
+<div class="float_ly_btns">
+<a href="javascript:void(0);" onclick="javascript:floatBannerTodayClose('360','0')">오늘 하루 열지 않음</a>
+<a href="javascript:void(0);" onclick="javascript:floatBannerClose('0');">창닫기</a>
+</div>
+</div>
+<!-- //banner  -->
+</div>
+<!-- //float -->
+<!-- wrap -->
+<section id="wrap">
+<!-- header -->
+<header class="" id="header">
+<!-- header_top -->
+<div class="header_top">
+<div class="inner">
+<h1><a href="/"></a></h1>
+<ul class="global_menu">
+<li><a href="https://www.ybmnet.co.kr/common/login.asp?url=%2Freceipt%2FreceiptStep1.php&amp;what=exam.toeic.co.kr">로그인</a></li>
+<li><a href="javascript:openWindow('https://member.ybmnet.co.kr/join/join_step1.jsp?site=ybmnet&amp;site_url=exam.toeic.co.kr', 'joinWin', 'scrollbars=yes,width=1024,height=768')" title="새창으로 열림">회원가입</a></li>
+<!-- li><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.ybmnet.co.kr&pageURL=mypage%2Fmypage.asp">MY서비스</a></li-->
+<li class="btn_mytest"> <a href="/mytest/myTest.php" title="마이테스트">마이테스트</a></li>
+<li><a href="/customer/csFaq.php" title="고객센터">고객센터</a></li>
+<li class="btn_linguistics"><!--a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.toeic.co.kr&pageURL=%2F"--><a href="/YBMSisacom.asp?SiteURL=https://www.toeic.co.kr/">YBM어학시험</a></li>
+<li class="box"><a class="btn_all_menu" href="javascript:common.allMenuOpen();"><span class="open">전체시험</span><span class="close">닫기</span></a></li>
+</ul>
+</div>
+</div>
+<!-- //header_top -->
+<!-- header_bottom -->
+<div class="header_bottom">
+<div class="cell">
+<div class="inner">
+<nav class="gnb_wrap" id="gnb">
+<ul>
+<!--공통 메뉴-->
+<!--li class="gnb_01"> -->
+<!--
+				@	1뎁스 a태그에 actived 클래스 추가시 활성화 아이콘 적용
+			  -->
+<!--a href="/receipt/receiptStep1.php" class="one actived"><span>시험접수</span></a>
+              <dl class="snb_wrap">
+                <dt><a href="#">시험접수</a></dt>
+                <dd><a href="/receipt/receiptStep1.php">온라인 접수</a></dd>
+                <dd><a href="/common/commonPreLogin.php?returnUrl=/receipt/confirmList.php">접수확인/변경</a></dd>
+                <dd><a href="#">접수취소</a></dd>
+                <dd><a href="/common/commonPreLogin.php?returnUrl=/receipt/examSchList.php">시험일정</a></dd>
+                <dd><a href="/receipt/centerMap.php">고사장 안내</a></dd>
+                <dd><a href="/customer/csPlaza.php">TOEIC Plaza 안내</a></dd>
+              </dl>
+            </li-->
+<li class="gnb_01"><a class="one actived" href="/receipt/receiptStep1.php"><span>시험접수</span></a>
+<!--
+		@	1뎁스 a태그에 actived 클래스 추가시 활성화 아이콘 적용
+	-->
+<dl class="snb_wrap">
+<!-- dt><a href="/receipt/receiptStep1.php">시험접수</a></dt -->
+<dd><a href="/receipt/receiptStep1.php">온라인접수</a></dd>
+<dd><a href="/common/commonPreLogin.php?returnUrl=/receipt/confirmList.php">접수확인/변경/취소</a></dd>
+<!-- dd><a href="/receipt/cancelList.php">접수취소</a -->
+<!--ul class="">
+        <li><a href="/receipt/cancelList.php">- 온라인취소</a></li>
+        <li><a href="/common/commonPreLogin.php?returnUrl=/receipt/cancelMail.php">- 우편취소</a></li>
+        <li><a href="/receipt/cancelResultList.php">- 취소신청내역</a></li>
+      </ul-->
+</dl></li></ul></nav></div></div></div></header></section></body></html>
+<dd><a href="/receipt/examSchList.php">시험일정</a></dd>
+<dd><a href="/receipt/centerMap.php">고사장안내</a></dd>
+<dd><a href="/receipt/toeicPlaza.php">TOEIC Plaza 안내</a></dd>
+
+
+<li class="gnb_02"> <a class="one" href="/common/commonPreLogin.php?returnUrl=/result/scoreList.php"><span>성적확인</span></a>
+<dl class="snb_wrap">
+<!-- dt><a href="/common/commonPreLogin.php?returnUrl=/result/scoreList.php">성적확인</a></dt -->
+<dd><a href="/common/commonPreLogin.php?returnUrl=/result/scoreList.php">성적확인/성적표발급</a></dd>
+<!-- dd><a href="/common/commonPreLogin.php?returnUrl=/result/issueList.php">성적표발급내역</a -->
+<!--ul class="">
+        <li><a href="/common/commonPreLogin.php?returnUrl=/result/issueList.php">- 발급신청내역</a></li>
+        <li><a href="/common/commonPreLogin.php?returnUrl=/result/issueCancelList.php">- 발급취소내역</a></li>
+      </ul-->
+</dl></li>
+<dd><a href="/result/statisToeic.php">성적분석</a></dd>
+<dd><a href="/common/commonPreLogin.php?returnUrl=/result/truthInput.php">성적표원본대조</a>
+<!--ul class="">
+        <li><a href="/common/commonPreLogin.php?returnUrl=/result/truthInput.php">- 성적진위여부 확인</a></li>
+        <li><a href="/result/certpia.php">- QR 코드 원본대조 확인</a></li>
+		<li><a href="/result/originalDownload.php">- 프로그램 다운로드</a></li>
+      </ul-->
+</dd>
+
+
+<li class="gnb_03"> <a class="one" href="/common/template/viewContents.php?contentsCode=19"><span>시험소개</span></a>
+<dl class="snb_wrap">
+<!-- dt><a href="/common/template/viewContents.php?contentsCode=19">시험소개</a></dt -->
+<dd><a href="/common/template/viewContents.php?contentsCode=18">연혁</a></dd>
+<dd><a href="/common/template/viewContents.php?contentsCode=19">소개</a></dd>
+<dd><a href="/content/TOE/sampleLc1.php">샘플문제</a></dd>
+<dd><a href="/content/TOE/report.php">성적표양식</a></dd>
+<dd><a class="eng" href="/common/template/viewContents.php?contentsCode=20">Proficiency Description</a></dd>
+<dd><a class="eng" href="/news/etsArchives.php">ETS Research Archives</a></dd>
+</dl>
+</li>
+<li class="gnb_04"> <a class="one" href="/common/template/viewContents.php?contentsCode=21"><span>활용현황</span></a>
+<dl class="snb_wrap">
+<!-- dt><a href="/common/template/viewContents.php?contentsCode=21">활용현황</a></dt -->
+<dd><a href="/common/template/viewContents.php?contentsCode=21">기업/기관</a></dd>
+<dd><a href="/common/template/viewContents.php?contentsCode=22">국가공무원</a></dd>
+<dd><a href="/common/template/viewContents.php?contentsCode=23">공공기관</a></dd>
+<dd><a href="/common/template/viewContents.php?contentsCode=24">국가자격증</a></dd>
+<dd><a href="/common/template/viewContents.php?contentsCode=25">대학/대학원</a></dd>
+<!--dd><a href="/common/template/viewContents.php?contentsCode=30">전문대학교</a></dd-->
+<!--dd><a href="/common/template/viewContents.php?contentsCode=33">대학원</a></dd-->
+</dl>
+</li>
+<li class="gnb_05"> <a class="one" href="/common/template/viewContents.php?contentsCode=36"><span>수험자가이드</span></a>
+<dl class="snb_wrap">
+<!-- dt><a href="/common/template/viewContents.php?contentsCode=36">수험자가이드</a></dt -->
+<dd><a href="/common/template/viewContents.php?contentsCode=36">수험자가이드</a></dd>
+<dd><a href="/common/template/viewContents.php?contentsCode=37">시험관리규정</a></dd>
+</dl>
+</li>
+<li class="gnb_06"> <a class="one" href="/book/index.php"><span>시험교재</span></a>
+<dl class="snb_wrap">
+<dd><a href="/book/index.php">시험교재</a></dd>
+</dl>
+</li>
+<li class="gnb_07"> <a class="one" href="https://www.toeicstory.co.kr/" target="new" title="새창"><span>토익스토리</span></a>
+<dl class="snb_wrap">
+<!-- dt><a href="https://www.toeicstory.co.kr/" title="새창">토익스토리</a></dt -->
+<dd><a href="https://www.toeicstory.co.kr/" target="new" title="새창">블로그</a></dd>
+<dd><a href="https://exam.ybmnet.co.kr/newsletter/" target="new" title="새창">뉴스레터</a></dd>
+</dl>
+</li>
+
+<p class="snb_banner"><a href="javascript:bannerClick('184');"><img alt="" src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/mainbanner/20200217164453431140093.jpg"/></a></p>
+
+
+<div class="all_menu">
+<div class="inner">
+<!--개편 link -->
+<ul class="menu_data">
+<li>
+<dl>
+<dt><a href="#">영어시험</a></dt>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fexam.toeic.co.kr&amp;pageURL=%2F"><img alt="TOEIC" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_01.gif"/></a></dd>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.toeicswt.co.kr&amp;pageURL=%2F"><img alt="TOEIC SPEAKING AND WRITING TESTS" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_02.gif"/></a></dd>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.toeflitp.co.kr&amp;pageURL=%2F"><img alt="TOEFL ITP" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_05.gif"/></a></dd><br/>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.toeicbridge.co.kr&amp;pageURL=%2F%3Fintro"><img alt="TOEIC BRIDGE" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_03.gif"/></a></dd>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.toeicbridgeswt.co.kr&amp;pageURL=%2F"><img alt="TOEIC BRIDGE SPEAKING AND WRITING TESTS" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_04.gif"/></a></dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt><a href="#">일본어시험</a></dt>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.jpt.co.kr&amp;pageURL=%2F"><img alt="JPT" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_06.gif"/></a></dd>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.ybmsjpt.co.kr&amp;pageURL=%2F"><img alt="SJPT" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_07.gif"/></a></dd>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.nihongokentei.co.kr&amp;pageURL=%2F"><img alt="일본어검정" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_08.gif"/></a></dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt><a href="#">중국어시험</a></dt>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.ybmtsc.co.kr&amp;pageURL=%2F"><img alt="TSC" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_09.gif"/></a></dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt><a href="#">초/중학생 영어시험</a></dt>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.jet.or.kr&amp;pageURL=%2F"><img alt="JET" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_10.gif"/></a></dd>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.jetspeaking.co.kr&amp;pageURL=%2F"><img alt="JET SW" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_11.gif"/></a></dd>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.jetkids.co.kr&amp;pageURL=%2F"><img alt="JET KIDS" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_12.gif"/></a></dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt><a href="#">한자, 한국어시험</a></dt>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.bizhanja.co.kr&amp;pageURL=%2F"><img alt="YBM 상무한검" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_13.gif"/></a></dd>
+<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.ybmkpe.co.kr&amp;pageURL=%2F"><img alt="KPE" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_14.gif"/></a></dd>
+</dl>
+</li>
+</ul>
+<!--//개편 link-->
+<!--임시 기존 link>
+		  <ul class="menu_data">
+            <li>
+              <dl>
+                <dt><a href="#">영어시험</a></dt>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/toeic/"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_01.gif" alt="TOEIC"/></a></dd>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/toeicswt/"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_02.gif" alt="TOEIC SPEAKING AND WRITING TESTS"/></a></dd>
+				 <dd><a href="/YBMSisacom.asp?SiteURL=https%3A%2F%2Fwww.toeflitp.co.kr&PageURL=%2F"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_05.gif" alt="TOEFL ITP"/></a></dd><br>
+                <dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.toeicbridge.co.kr&pageURL=%2F%3Fintro"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_03.gif" alt="TOEIC BRIDGE"/></a></dd>
+				<dd><a href="/YBMSisacom.php?siteURL=https%3A%2F%2Fwww.toeicbridgeswt.co.kr&pageURL=%2F"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_04.gif" alt="TOEIC BRIDGE SPEAKING AND WRITING TESTS"/></a></dd>    
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><a href="#">일본어시험</a></dt>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/jpt/index.asp"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_06.gif" alt="JPT"/></a></dd>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/sjpt/index.asp"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_07.gif" alt="SJPT"/></a></dd>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/nihongo/index.asp"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_08.gif" alt="일본어검정"/></a></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><a href="#">중국어시험</a></dt>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/tsc/index.asp"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_09.gif" alt="TSC"/></a></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><a href="#">초/중학생 영어시험</a></dt>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/jet/index.asp"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_10.gif" alt="JET"/></a></dd>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/jetspeaking/index.asp"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_11.gif" alt="JET SW"/></a></dd>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/jetkids/main.asp"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_12.gif" alt="JET KIDS"/></a></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt><a href="#">한자, 한국어시험</a></dt>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/bizhanja/index.asp"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_13.gif" alt="YBM 상무한검"/></a></dd>
+                <dd><a href="/YBMSisacom.asp?SiteURL=https://exam.ybmnet.co.kr&amp;PageURL=/kpe/index.asp"><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/common/all_menu_logo_14.gif" alt="KPE"/></a></dd>
+              </dl>
+            </li>
+          </ul>
+		<!--//임시 기존 link-->
+</div>
+</div>
+
+
+<!-- //header_bottom -->
+
+<!-- //header -->
+<!--navMenu-->
+<div class="history_wrap" id="history">
+<div class="cell"> </div>
+</div>
+<!--navMenu-->
+<script src="/_resources/js/receiptUser.js?ver=1" type="text/javascript"></script>
+<script src="/_resources/js/main.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var examCate = $("html").data("examcate");
+	var url = "/receipt/receiptStep1Ajax1.php"; // TOEIC, JPT, SJPT, TSC 외 (아래 IF문 제외 나머지)
+	var sbGoodsType1 = "";
+
+	if (examCate=="TOS") {
+		url = "/receipt/receiptStep1Ajax2.php"; // TOS
+		sbGoodsType1 = "";
+	} else if (examCate=="JET") {
+		url = "/receipt/receiptStep1Ajax3.php"; // JET
+    } else if (examCate=="JPN") {
+        url = "/receipt/receiptStep1Ajax6.php"; // JPN
+	} else if (examCate=="JSW") {
+		url = "/receipt/receiptStep1Ajax4.php"; // JSW
+		sbGoodsType1 = "";
+	} else if (examCate=="TBS") {
+		url = "/receipt/receiptStep1Ajax5.php"; // TBS
+		sbGoodsType1 = "";
+	}
+
+	$.ajax({
+		type: "post",
+		url: url,
+		data: {"sbGoodsType1":sbGoodsType1},
+		dataType: "html",
+		success: function(data) {
+			$("#examList").html(data); // 현재 접수중인 시험 리스트 table 태그를 완성하여 가져옴
+		},
+		error: function(request, status, error) {
+			alert("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
+		}
+	});
+});
+
+$(document).on("click", ".btnCompExamInfo", function(e) {
+    var isPack = false;
+    if (typeof($(this).data("packGoodsCode"))!="undefined") {
+        isPack = true;
+    }
+
+    $("#receiptFrm [name='examCate']").val("TOS"); // 시험 카테고리
+    $("#receiptFrm [name='sbGoodsType1']").val('TOS');
+    $("#receiptFrm [name='returnUrl']").val("/common/cert/comp/compLogin.php"); // 시험 카테고리
+    $("#receiptFrm [name='compExam']").val(1); // 시험 카테고리
+
+    if (false) {
+        nextWhenLogined();
+    } else {
+        openExamLayer(isPack);
+    }
+});
+
+$(document).on("click", ".btnExamInfo", function(e) {
+    var isPack = false;
+    if (typeof($(this).data("packGoodsCode"))!="undefined") {
+        isPack = true;
+    }
+
+		var regiChk = $(this).data("regiChk");
+		if(regiChk!="O"){
+			alert("해당 회차의 접수가 종료되었습니다.");
+			return;
+		}
+
+    $("#receiptFrm [name='examCate']").val($(this).data("examCate")); // 시험 카테고리
+    $("#receiptFrm [name='examCode']").val($(this).data("examCode")); // 시험 코드
+    $("#receiptFrm [name='goodsCode']").val($(this).data("goodsCode")); // 각 상품 코드
+    $("#receiptFrm [name='packGoodsCode']").val($(this).data("packGoodsCode")); // 패키지 묶음 상품코드
+    $("#receiptFrm [name='examGoodsCode']").val($(this).data("examGoodsCode")); // 시험 고유 코드
+    $("#receiptFrm [name='sbGoodsType1']").val($(this).data("sbGoodsType1")); // 시험 과목명
+    $("#receiptFrm [name='goodsName']").val($(this).data("goodsName"));	//시험 이름
+    $("#receiptFrm [name='examDay']").val($(this).data("examDay"));	// 시험 날짜
+    $("#receiptFrm [name='examStartTime']").val($(this).data("examStartTime"));	// 시험 시작 시간
+    $("#receiptFrm [name='dispGoodsName']").val($(this).data("dispGoodsName"));	// 표기용 시험명
+
+    if (false) {
+        nextWhenLogined();
+    } else {
+        openExamLayer(isPack);
+    }
+});
+
+/*
+	로그인창 레이어 팝업에서 로그인 or 비회원 로그인 클릭 이벤트
+*/
+$(document).on("click", ".btnLogin", function() {
+	var isMember = $(this).data("isMember");
+
+    // 어린이 시험의 비회원 접수시만 간편 로그인으로 이동. 그 외의 케이스는 모두 next() 에서 처리 한다.
+    if (isMember !== "member") {
+		var examCate = $("#receiptFrm [name='examCate']").val()
+
+		if (examCate=="JET" || examCate=="JSW" || examCate=="TOB" || examCate=="TBS") {
+			$("#receiptFrm").attr("action", "/common/certifyResponse.php");
+			window.open("https://www.toeicbridge.co.kr/common/cert/sns/snsLogin.php?frmName=receiptFrm&domain=exam.toeic.co.kr", "_snsLogin", "width=800,height=650 , scrollbars=1");
+
+			return;
+		}
+	}
+
+    nextWhenNotLogined(isMember === 'member');
+});
+
+function nextWhenLogined() {
+    // 로그인 되어 있을 경우 step 2 로 이동
+    isLogined(function (isLogined) {
+        if (isLogined) {
+            $("#receiptFrm").attr("action", "/common/certifyResponse.php");
+            $("#receiptFrm").submit();
+        } else {
+            alert('세션이 만료되었습니다. 다시 시도해주시기 바랍니다.');
+            location.reload();
+        }
+    });
+}
+
+function nextWhenNotLogined(isMember) {
+    if (!isMember) {
+        // 비회원 로그인시도일 경우 certifyResponse 로 보내면, 비회원 인증 화면으로 간다.
+        $("#receiptFrm").attr("action", "/common/certifyResponse.php");
+        $("#receiptFrm").submit();
+    } else {
+        // family 로그인 시도시 공통 로그인을 통해서 step2로 이동
+        // receiptFrm form 에 있는 파라미터를 get방식으로 보내기 위해(family 로그인에선 post방식 처리 불가)
+        /* (필수파라미터) 처리 완료 후 이동할 url */
+        var returnUrl = $("#receiptFrm [name='returnUrl']").val();
+
+        /* returnUrl 으로 담아서 가져가야할 파라미터 들 */
+        var examCate = $("#receiptFrm [name='examCate']").val();
+        var examCode = $("#receiptFrm [name='examCode']").val();
+        var goodsCode = $("#receiptFrm [name='goodsCode']").val();
+        var packGoodsCode = $("#receiptFrm [name='packGoodsCode']").val();
+        var examGoodsCode = $("#receiptFrm [name='examGoodsCode']").val();
+        var sbGoodsType1 = $("#receiptFrm [name='sbGoodsType1']").val();
+        var compExam = $("#receiptFrm [name='compExam']").val();
+
+        /* YBM Family 공통 로그인에선 POST방식 처리불가로 인해 GET방식으로 이동 */
+        var url = encodeURIComponent("/common/certifyResponse.php?examCate=" + examCate + "&examCode=" + examCode + "&goodsCode=" + goodsCode + "&packGoodsCode=" + packGoodsCode + "&examGoodsCode=" + examGoodsCode + "&sbGoodsType1=" + sbGoodsType1 + "&returnUrl=" + returnUrl + "&compExam=" + compExam);
+        var what = "exam.toeic.co.kr";
+
+        location.href="https://www.ybmnet.co.kr/common/login.asp?url="+ url +"&what=" + what;
+    }
+}
+
+/* 시험 회원/비회원 로그인 레이어 생성 후 open */
+function openExamLayer(isPack) {
+	$(".btnLogin").show();
+
+    var goodsName = "";
+
+	// 패키지일 경우 비회원 로그인, 시험날짜 숨김
+	if (isPack) {
+		goodsName = $("#receiptFrm [name='goodsName']").val();
+		$(".btnNoMemberLogin").hide();
+		$(".pack").hide();
+	// 단일시험일 경우 시험날짜 노출
+	} else {
+		if ($("#receiptFrm [name='examCate']").val() === "JPN") {
+			goodsName = $("#receiptFrm [name='dispGoodsName']").val();
+		} else {
+			goodsName = fnGetGoodsType1Name($("#receiptFrm [name='sbGoodsType1']").val());
+		}
+
+		$(".pack").show();
+	}
+	$("#layerGoodsName").html(goodsName);
+
+	if ($("#compExam").val() == "1") $(".pack").hide();
+
+	// 시험날짜가 토요일이면 파란글자, 일요일이면 빨간글자로 요일 표기
+	if (fnGetDayOfTheWeek($("#receiptFrm [name='examDay']").val())=="토") {
+		var examDayColor = "color_02";
+	} else if (fnGetDayOfTheWeek($("#receiptFrm [name='examDay']").val())=="일") {
+		var examDayColor = "color_01";
+	}
+
+	var examCate = $("#receiptFrm [name='examCate']").val();
+	var examStartTime = "";
+	// CBT시험만 시험시간 표기
+	if (examCate!="TOS" && examCate!="JSW" && examCate!="TBS" && examCate!="TSC" && examCate!="SJP") {
+		examStartTime = $("#receiptFrm [name='examStartTime']").val();
+	}
+
+	$("#layerExamDay").html(fnGetDate($("#receiptFrm [name='examDay']").val(), "-") + "<span class='"+ examDayColor +"'> ("+ fnGetDayOfTheWeek($("#receiptFrm [name='examDay']").val()) +") </span>" + examStartTime);
+
+	$(".layer").show();
+}
+
+/* 시험 회원/비회원 로그인 레이어 close */
+function closeExamLayer() {
+	$(".receiptInfo").val("");
+	$(".layer").hide();
+}
+</script>
+<h2 class="page_title">시험접수</h2>
+<!-- contents -->
+<div id="contents">
+<!-- 현재 접수중인 시험 -->
+<div id="examList"></div>
+<!-- //현재 접수중인 시험 -->
+<!-- 패키지 접수 중단 문구 -->
+<div class="dot_info_list no_line">
+<ul>
+<li>※ 패키지 접수를 잠정 중단합니다.</li>
+</ul>
+</div>
+<!-- //패키지 접수 중단 문구 -->
+<!-- 패키지 접수 가격 인하 -->
+<div class="default_cell package_sale" style="display:none">
+<div class="title_wrap">
+<h3 class="content_title">다른 시험과 함께 <em>패키지 접수가 가능합니다.</em></h3>
+</div>
+<div class="package_sale_list">
+<!-- 현재 접수중인 패키지 시험 리스트 -->
+<ul>
+<li>
+<div class="cell">
+<div class="info">
+<p class="name"><span class="d_t"><span class="d_c">TOEIC(정기) + TOEIC Speaking Test</span></span></p>
+<p class="txt">개별 접수 시 <span>121,500원</span></p>
+<p class="price"><span class="">113,500원</span></p>
+</div>
+<!-- <p class="btns">
+								<a href="javascript:void(0);" class="btn_normal type_03 btnExamInfo" data-exam-cate="TOE" data-pack-goods-code="toeEXR_37" data-goods-name="TOEIC&#40;정기&#41; + TOEIC Speaking Test">접수하기</a>
+							</p> -->
+</div>
+</li>
+<li>
+<div class="cell">
+<div class="info">
+<p class="name"><span class="d_t"><span class="d_c">TOEIC(정기) + TOEIC Writing Test</span></span></p>
+<p class="txt">개별 접수 시 <span>121,500원</span></p>
+<p class="price"><span class="">113,500원</span></p>
+</div>
+<!-- <p class="btns">
+								<a href="javascript:void(0);" class="btn_normal type_03 btnExamInfo" data-exam-cate="TOE" data-pack-goods-code="toeEXR_38" data-goods-name="TOEIC&#40;정기&#41; + TOEIC Writing Test">접수하기</a>
+							</p> -->
+</div>
+</li>
+<li>
+<div class="cell">
+<div class="info">
+<p class="name"><span class="d_t"><span class="d_c">TOEIC(정기) + TOEIC Speaking and Writing Tests</span></span></p>
+<p class="txt">개별 접수 시 <span>149,000원</span></p>
+<p class="price"><span class="">139,000원</span></p>
+</div>
+<!-- <p class="btns">
+								<a href="javascript:void(0);" class="btn_normal type_03 btnExamInfo" data-exam-cate="TOE" data-pack-goods-code="toeEXR_39" data-goods-name="TOEIC&#40;정기&#41; + TOEIC Speaking and Writing Tests">접수하기</a>
+							</p> -->
+</div>
+</li>
+<li>
+<div class="cell">
+<div class="info">
+<p class="name"><span class="d_t"><span class="d_c">TOEIC(정기) + SJPT</span></span></p>
+<p class="txt">개별 접수 시 <span>117,100원</span></p>
+<p class="price"><span class="">106,100원</span></p>
+</div>
+<!-- <p class="btns">
+								<a href="javascript:void(0);" class="btn_normal type_03 btnExamInfo" data-exam-cate="TOE" data-pack-goods-code="toeEXR_40" data-goods-name="TOEIC&#40;정기&#41; + SJPT">접수하기</a>
+							</p> -->
+</div>
+</li>
+<li>
+<div class="cell">
+<div class="info">
+<p class="name"><span class="d_t"><span class="d_c">TOEIC(정기) + TSC</span></span></p>
+<p class="txt">개별 접수 시 <span>117,100원</span></p>
+<p class="price"><span class="">106,100원</span></p>
+</div>
+<!-- <p class="btns">
+								<a href="javascript:void(0);" class="btn_normal type_03 btnExamInfo" data-exam-cate="TOE" data-pack-goods-code="toeEXR_41" data-goods-name="TOEIC&#40;정기&#41; + TSC">접수하기</a>
+							</p> -->
+</div>
+</li>
+<li>
+<div class="cell">
+<div class="info">
+<p class="name"><span class="d_t"><span class="d_c">TOEIC(특별) + TOEIC Speaking Test</span></span></p>
+<p class="txt">개별 접수 시 <span>125,900원</span></p>
+<p class="price"><span class="">117,900원</span></p>
+</div>
+<!-- <p class="btns">
+								<a href="javascript:void(0);" class="btn_normal type_03 btnExamInfo" data-exam-cate="TOE" data-pack-goods-code="toeEXS_9" data-goods-name="TOEIC&#40;특별&#41; + TOEIC Speaking Test">접수하기</a>
+							</p> -->
+</div>
+</li>
+<li>
+<div class="cell">
+<div class="info">
+<p class="name"><span class="d_t"><span class="d_c">TOEIC(특별) + TOEIC Writing Test</span></span></p>
+<p class="txt">개별 접수 시 <span>125,900원</span></p>
+<p class="price"><span class="">117,900원</span></p>
+</div>
+<!-- <p class="btns">
+								<a href="javascript:void(0);" class="btn_normal type_03 btnExamInfo" data-exam-cate="TOE" data-pack-goods-code="toeEXS_10" data-goods-name="TOEIC&#40;특별&#41; + TOEIC Writing Test">접수하기</a>
+							</p> -->
+</div>
+</li>
+<li>
+<div class="cell">
+<div class="info">
+<p class="name"><span class="d_t"><span class="d_c">TOEIC(특별) + TOEIC Speaking and Writing Tests</span></span></p>
+<p class="txt">개별 접수 시 <span>153,400원</span></p>
+<p class="price"><span class="">143,400원</span></p>
+</div>
+<!-- <p class="btns">
+								<a href="javascript:void(0);" class="btn_normal type_03 btnExamInfo" data-exam-cate="TOE" data-pack-goods-code="toeEXS_11" data-goods-name="TOEIC&#40;특별&#41; + TOEIC Speaking and Writing Tests">접수하기</a>
+							</p> -->
+</div>
+</li>
+<li>
+<div class="cell">
+<div class="info">
+<p class="name"><span class="d_t"><span class="d_c">TOEIC(정기) + JPT(정기)</span></span></p>
+<p class="txt">개별 접수 시 <span>88,000원</span></p>
+<p class="price"><span class="">84,100원</span></p>
+</div>
+<!-- <p class="btns">
+								<a href="javascript:void(0);" class="btn_normal type_03 btnExamInfo" data-exam-cate="TOE" data-pack-goods-code="jptEXR_35" data-goods-name="TOEIC&#40;정기&#41; + JPT&#40;정기&#41;">접수하기</a>
+							</p> -->
+</div>
+</li>
+</ul>
+<!-- //현재 접수중인 패키지 시험 리스트 -->
+</div>
+</div>
+<!-- //패키지 접수 가격 인하 -->
+<form id="receiptFrm" method="post" name="receiptFrm">
+<input class="receiptInfo" id="examCate" name="examCate" type="hidden" value=""/>
+<input class="receiptInfo" id="examCode" name="examCode" type="hidden" value=""/>
+<input class="receiptInfo" id="goodsCode" name="goodsCode" type="hidden" value=""/>
+<input class="receiptInfo" id="goodsName" name="goodsName" type="hidden" value=""/>
+<input class="receiptInfo" id="packGoodsCode" name="packGoodsCode" type="hidden" value=""/>
+<input class="receiptInfo" id="examGoodsCode" name="examGoodsCode" type="hidden" value=""/>
+<input class="receiptInfo" id="sbGoodsType1" name="sbGoodsType1" type="hidden" value=""/>
+<input class="receiptInfo" id="examDay" name="examDay" type="hidden" value=""/>
+<input class="receiptInfo" id="examStartTime" name="examStartTime" type="hidden" value=""/>
+<input class="receiptInfo" id="dispGoodsName" name="dispGoodsName" type="hidden" value=""/>
+<input class="receiptInfo" id="encParam" name="encParam" type="hidden" value=""/>
+<input class="receiptInfo" id="compExam" name="compExam" type="hidden" value="0"/>
+<input id="returnUrl" name="returnUrl" type="hidden" value="/receipt/receiptStep2.php"/>
+</form>
+<!-- 배너 영역 -->
+<article class="rolling_banner mt60">
+<!-- item_wrap -->
+<div class="item_wrap">
+<!-- cell -->
+<div class="cell">
+<a href="javascript:bannerClick('291');"><p class="bg"><img src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/mainbanner/202009031143321432886477.jpg"/></p></a>
+</div>
+<!-- //cell -->
+<!-- cell -->
+<div class="cell">
+<a href="javascript:bannerClick('183');"><p class="bg"><img src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/mainbanner/202007221518171480021002.jpg"/></p></a>
+</div>
+<!-- //cell -->
+<form id="moveBrigdeFrm" method="post" name="moveBrigdeFrm">
+<input id="intro" name="intro" type="hidden" value="0"/>
+</form>
+</div>
+<!-- //item_wrap -->
+</article>
+<!-- 배너 영역 -->
+</div>
+<!-- //contents -->
+<!-- 로그인 모달 -->
+<div class="layer" id="dim" style="display:none"></div>
+<div class="modalpop modalpop_login layer" id="layerPopLogin" style="display:none">
+<div class="pop_title_wrap">
+<h1 class="pop_title">먼저 로그인을 해주세요.</h1>
+<div class="title_action">
+<a class="btn_delete btnLayerPopClose" href="javascript:closeExamLayer()"><img alt="삭제" src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/util/btn_item_delete.png"/></a>
+</div>
+</div>
+<section class="pop_content">
+<div class="inner">
+<dl>
+<dt>시험</dt>
+<dd class="exam" id="layerGoodsName"></dd>
+</dl>
+<dl class="pack">
+<dt>시험일</dt>
+<dd class="day" id="layerExamDay"></dd>
+</dl>
+</div>
+<p class="btn_pop_page">
+<a class="btn_big type_03 btnLogin btnMemberLogin" data-is-member="member" href="#">회원 로그인</a>
+<a class="btn_big type_01 btnLogin btnNoMemberLogin" data-is-member="nomember" href="#">비회원 로그인</a>
+</p>
+</section>
+</div>
+<!-- //로그인 모달 -->
+
+<!-- //container -->
+<a href="javascript:common.scrollTop();" id="btn_top"></a>
+<!-- footer -->
+<footer class="footer_wrap" id="footer">
+<div class="inner">
+<ul class="menu">
+<li><a href="https://company.ybmnet.co.kr/" target="_blank" title="회사소개">회사소개</a></li>
+<li><a href="javascript:openWindow('https://member.ybmnet.co.kr/join/terms/ybmnet_agree.html','winRename','toolbar=0,status=0,menubar=0,scrollbars=yes,width=800,height=600')" title="이용약관">이용약관</a></li>
+<li><a href="https://member.ybmnet.co.kr/join/terms/ybmnet_indiv_new.html" target="_blank" title="개인정보처리방침">개인정보처리방침</a></li>
+<li><a href="https://company.ybmnet.co.kr/creator/" target="_blank" title="콘텐츠창작지원">콘텐츠창작지원</a></li>
+<li><a href="https://company.ybmnet.co.kr/proposal/" target="_blank" title="비즈니스제휴제안">비즈니스제휴제안</a></li>
+<li><a href="/customer/csFaq.php" title="고객센터로 이동">고객센터</a></li>
+</ul>
+<address>㈜와이비엠넷 경기도 성남시 분당구 대왕판교로 670 유스페이스2 A동 8/9층 대표이사 오재환<br/>
+						  사업자등록번호 220-81-89608 / 통신판매업신고 경기성남-0034 <a href="javascript:openWindow('https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208189608','winRename','toolbar=0,status=0,menubar=0,scrollbars=yes,width=800,height=600')" title="사업자정보확인">사업자정보확인</a><br/>
+						  시험 02.2279.0505 / 결제 02.2008.5200 / Fax 0502-320-5201 개인정보 <a href="mailTo:privacy@ybm.co.kr">privacy@ybm.co.kr</a><br/>
+						  Copyright © (주)와이비엠넷. All rights reserved.</address>
+<div class="service_info">
+<p class="title">기업은행 채무지급보증안내</p>
+<p class="info">전자상거래 등에서의 소비자보호에 관한 법률에 따라<br/>기업은행과 채무지급보증 계약을 체결하여 고객님의<br/>결제금액에 대한 안전거래를 보장하고 있습니다.</p>
+<p class="btn_info"><a class="btn_s type_01" href="javascript:openWindow('https://www.ybmnet.co.kr/footer/ibkBank.htm','winRename','toolbar=0,status=0,menubar=0,scrollbars=yes,width=800,height=600')" title="서비스가입사실확인">서비스가입사실확인</a></p>
+</div>
+<div class="license_info">
+<p class="ets">ETS, the ETS logo, TOEIC, 토익, TOEFL ITP are registered trademarks of Educational Testing Service, Princeton, New Jersey, U.S.A., used in the Republic of Korea under license.</p>
+<p class="txt">(주)와이비엠넷은 통신판매중개자로서 어학시험 서비스는 (주)와이비엠의 책임하에 운영되고 있습니다.</p>
+</div>
+</div>
+</footer>
+<!-- //footer -->
+
+<div class="mask_lock" id="mask_screen" style="display:none;"><p><img src="https://imagesisa.ybmnet.co.kr/platform/exam_ybmnet_co_kr/loading.gif"/></p></div>
+<!-- //wrap -->
+<!--
+<script src="/_resources/js/common.js"></script>
+-->
+<script src="https://upsisa.ybmnet.co.kr:444/si/exam_ybmsisa_com/texam/_resources/js/common.js"></script>
+<script type="text/javascript">
+		setNavMenu("시험접수", "온라인접수", " ", "");
+	</script>
+
+
