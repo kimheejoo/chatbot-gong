@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pymysql
 
 user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
-headers = {"Referer":"http://www.q-net.or.kr/crf005.do?id=crf00505&jmCd=1320",
+headers = {"Referer":"http://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=1320",
          "User-Agent":user_agent}
 
 def DB_truncate():

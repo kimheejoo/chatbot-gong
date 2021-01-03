@@ -40,7 +40,7 @@ headers = {"Referer":"https://job.alio.go.kr/recruit.do",
 DB_truncate()
 
 for i in range(1,8):
-    url = "https://job.alio.go.kr/recruit.do?pageNo="+str(i)+"&param=&search_yn=Y&idx=&recruitYear=&recruitMonth=&detail_code="+code+"&s_date="+year+".01."+day+"&e_date="+today+"&org_name=&title=&order=REG_DATE"
+    url = "https://job.alio.go.kr/recruit.do?pageNo="+str(i)+"&param=&search_yn=Y&idx=&recruitYear=&recruitMonth=&detail_code="+code+"&e_date="+today+"&org_name=&title=&order=REG_DATE"
     html = requests.get(url,headers = headers)
     data = BeautifulSoup(html.text,'html.parser')
     row = data.find('table', class_='tbl type_03').find('tbody').find_all('tr')

@@ -36,7 +36,7 @@ def DB_select_test(table):
             elif table == 'toeic':
                 query = 'select test, announce, regist_end, url from '+table
             elif table == 'history':
-                query = 'select name, regist, test, announce from '+table
+                query = 'select name, regist, test, type from '+table
             curs.execute(query)
             return curs.fetchall()
         conn.commit()
@@ -154,7 +154,7 @@ def test():
                                 "type":"url",
                                 "label":i[0]+" 필기",
                                 "data":{
-                                    "url":"http://www.q-net.or.kr/crf005.do?id=crf00505&jmCd=1320"
+                                    "url":"http://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=1320"
                                 }
                             }
                         ]
@@ -169,7 +169,7 @@ def test():
                                 "type":"url",
                                 "label":i[0]+" 실기",
                                 "data":{
-                                    "url":"http://www.q-net.or.kr/crf005.do?id=crf00505&jmCd=1320"
+                                    "url":"http://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=1320"
                                 }
                             }
                         ]
@@ -189,7 +189,7 @@ def test():
                                       "type":"url",
                                       "label":'더 알아보기',
                                       "data":{
-                                          "url":"http://www.q-net.or.kr/crf005.do?id=crf00505&jmCd=1320"
+                                          "url":"http://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=1320"
                                       }
                                     }
                                   ]
@@ -244,7 +244,7 @@ def test():
             if today < test and today < regist: # 시험일자, 접수일자 지난 것은 출력 X
                 card = {
                     "title": '✔ '+i[0]+' 한국사능력검정시험',
-                    "description": '👉🏻접수기간: '+i[1]+'\n👉🏻시험일시: '+i[2]+'\n합격자발표: '+i[3],
+                    "description": '👉🏻접수기간: '+i[1]+'\n👉🏻시험일시: '+i[2]+'\n👉🏻시험종류: '+i[3],
                     "buttons":[
                         {
                             "type":"url",
