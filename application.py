@@ -8,7 +8,7 @@ application = Flask(__name__)
 today = datetime.today().strftime('%Y.%m.%d')
 
 def DB_select_company(what,where="",order='asc'):
-    conn = pymysql.connect(host='localhost', user='root', password='rlagmlwn', db='company')
+    conn = pymysql.connect(host='localhost', user='root', password='', db='company')
     try:
         with conn.cursor() as curs:
             if what == "all":
@@ -28,7 +28,7 @@ def DB_select_company(what,where="",order='asc'):
         conn.close()
         
 def DB_select_test(table):
-    conn = pymysql.connect(host='localhost', user='root', password='rlagmlwn', db='test')
+    conn = pymysql.connect(host='localhost', user='root', password='', db='test')
     try:
         with conn.cursor() as curs:
             if table == 'engineering':

@@ -7,7 +7,7 @@ headers = {'Referer':'http://www.historyexam.go.kr/pst/list.do?bbs=noti',
           'User-Agent':user_agent}
 
 def DB_truncate():
-    conn = pymysql.connect(host='localhost', user='root', password='rlagmlwn', db='test')
+    conn = pymysql.connect(host='localhost', user='root', password='', db='test')
     try:
         with conn.cursor() as curs:
             query = 'truncate table history'
@@ -17,7 +17,7 @@ def DB_truncate():
         conn.close()
         
 def DB_insert(insert_data):
-    conn = pymysql.connect(host='localhost', user='root', password='rlagmlwn', db='test')
+    conn = pymysql.connect(host='localhost', user='root', password='', db='test')
     try:
         with conn.cursor() as curs:
             query = 'insert into history (name, regist, test, announce) values (%s, %s, %s, %s)'
@@ -29,8 +29,6 @@ def DB_insert(insert_data):
 url = 'http://www.historyexam.go.kr/pst/view.do?bbs=noti&pst_sno=1000029601&pageIndex=1&searchCondition=pstTitle&searchKeyword=&pageUnit=10'
 html = requests.post(url, headers = headers)
 data = BeautifulSoup(html.text,'html.parser')
-# html = open('page.html')
-# data = BeautifulSoup(html,'html.parser')
 rows = data.select('tbody > tr')[4].select('td > div > div > table')[0].select('tbody > tr')
 DB_truncate()
 insert_data = []

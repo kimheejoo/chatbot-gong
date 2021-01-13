@@ -16,7 +16,7 @@ code = 'R600020' #정보통신
 user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36"
 
 def DB_insert(inputs):
-    conn = pymysql.connect(host='localhost', user='root', password='rlagmlwn', db='company')
+    conn = pymysql.connect(host='localhost', user='root', password='', db='company')
     try:
         with conn.cursor() as curs:
             query = 'insert into companies (title,comp_name,place,s_date,e_date,state,url) values (%s, %s, %s, %s, %s, %s, %s)'
@@ -26,7 +26,7 @@ def DB_insert(inputs):
         conn.close()
         
 def DB_truncate():
-    conn = pymysql.connect(host='localhost', user='root', password='rlagmlwn', db='company')
+    conn = pymysql.connect(host='localhost', user='root', password='', db='company')
     try:
         with conn.cursor() as curs:
             query = 'truncate table companies'

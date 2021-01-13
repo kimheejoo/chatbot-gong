@@ -7,7 +7,7 @@ headers = {"Referer":"http://www.q-net.or.kr/crf005.do?id=crf00503&jmCd=1320",
          "User-Agent":user_agent}
 
 def DB_truncate():
-    conn = pymysql.connect(host='localhost', user='root', password='rlagmlwn', db='test')
+    conn = pymysql.connect(host='localhost', user='root', password='', db='test')
     try:
         with conn.cursor() as curs:
             query = 'truncate table engineering'
@@ -17,7 +17,7 @@ def DB_truncate():
         conn.close()
         
 def DB_insert(insert_data):
-    conn = pymysql.connect(host='localhost', user='root', password='rlagmlwn', db='test')
+    conn = pymysql.connect(host='localhost', user='root', password='', db='test')
     try:
         with conn.cursor() as curs:
             query = 'insert into engineering (title,one_regist,one_test,one_pass,two_regist,two_test,two_pass) values (%s, %s, %s, %s, %s, %s, %s)'

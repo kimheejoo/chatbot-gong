@@ -7,7 +7,7 @@ headers = {"Referer":"https://www.google.com/",
          "User-Agent":user_agent}
 
 def DB_truncate():
-    conn = pymysql.connect(host='localhost', user='root', password='rlagmlwn', db='test')
+    conn = pymysql.connect(host='localhost', user='root', password='', db='test')
     try:
         with conn.cursor() as curs:
             query = 'truncate table toeic'
@@ -17,7 +17,7 @@ def DB_truncate():
         conn.close()
         
 def DB_insert(insert_data):
-    conn = pymysql.connect(host='localhost', user='root', password='rlagmlwn', db='test')
+    conn = pymysql.connect(host='localhost', user='root', password='', db='test')
     try:
         with conn.cursor() as curs:
             query = 'insert into toeic (test,announce,regist_end, url) values (%s, %s, %s, %s)'
@@ -29,8 +29,8 @@ def DB_insert(insert_data):
 url = 'https://exam.toeic.co.kr/examMainAjaxType1.php'
 html = requests.get(url, headers = headers)
 data = BeautifulSoup(html.text,'html.parser')
-span_info = data.select('span.info') #5개
-span_date = data.select('span.date') #날짜
+span_info = data.select('span.info') 
+span_date = data.select('span.date')
 DB_truncate()
 for i in range(5):
     insert_data = []
