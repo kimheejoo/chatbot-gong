@@ -14,9 +14,9 @@
 
 <img src="https://user-images.githubusercontent.com/29877240/104429425-f197a700-55c8-11eb-9710-ae2af6995761.png" width="400px" height="400px"></img>
 
+   
 
-
-
+   
 
 ## 기능
 
@@ -24,11 +24,11 @@
 2. **마감**날짜가 **임박**한 공고를 보여줍니다.
 3. **정보처리기사**의 시험 날짜 등 시험에 관한 정보를 알려줍니다.
 4. **토익**에 관한 정보를 알려줍니다.
-5. **한국사** 시험에 관한 정보를 알려줍니다.
+5. **한국사** 시험에 관한 정보를 알려줍니다.  
 
+   
 
-
-
+   
 
 ## 화면
 
@@ -36,11 +36,15 @@
 
 <img src="https://user-images.githubusercontent.com/29877240/104430545-27895b00-55ca-11eb-93b2-b224512798e8.png" width="350px" height="255px">
 
+   
+
 
 
 - **마감임박**
 
 <img src="https://user-images.githubusercontent.com/29877240/104430779-7b943f80-55ca-11eb-9166-46cc9f8b5d96.png" width="350px" height="255px">
+
+   
 
 
 
@@ -48,11 +52,15 @@
 
 <img src="https://user-images.githubusercontent.com/29877240/104430836-8d75e280-55ca-11eb-8131-e36d49ed0b34.png" width="350px" height="240px">
 
+   
+
 
 
 - **토익**
 
 <img src="https://user-images.githubusercontent.com/29877240/104431004-c1510800-55ca-11eb-9528-26477c17704f.png" width="350px" height="240px">
+
+   
 
 
 
